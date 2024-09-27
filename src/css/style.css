@@ -10,13 +10,13 @@ header {
 .image-container {
   width: 29rem;
   height: 3.7rem;
-  background-image: url("/src/img/logo.jpg");
+  background-image: url("/img/logo.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .image-container:hover {
-  background-image: url("/src/img/dark_logo.jpg");
+  background-image: url("/img/dark_logo.jpg");
 }
 
 .search-bar {
@@ -117,6 +117,7 @@ header {
 .container-avatar {
   text-align: center;
   position: relative;
+  width: 13.8rem;
 }
 
 .container-avatar-photo {
@@ -326,19 +327,16 @@ tbody tr:nth-child(odd) {
 
 /*  TEACHERS CARD */
 
-/* .container {
-  background-color: rgba(212, 212, 212, 0.692);
-  filter: blur(3px);
-}
-
 .container-card-teacher {
+  display: none;
   width: 80rem;
   height: 38rem;
   background-color: #fff;
   box-shadow: 0 10px 10px rgb(0 0 0 / 0.2);
-  position: absolute;
-  top: 50rem;
-  left: 31rem;
+  position: fixed;
+  top: 15rem;
+  left: 30rem;
+  z-index: 1;
 }
 
 .container-teacher-info {
@@ -382,7 +380,15 @@ tbody tr:nth-child(odd) {
   color: rgb(94, 183, 184);
 }
 
+.unfill-star {
+  width: 3rem;
+  margin-left: 21rem;
+  margin-top: 1rem;
+}
+
 .teacher-info-photo {
+  width: 23rem;
+  height: 23rem;
   margin: 1rem;
   margin-right: 3rem;
 }
@@ -398,14 +404,14 @@ tbody tr:nth-child(odd) {
   color: rgb(94, 183, 184);
   margin-left: 1rem;
   border-bottom: 1px dotted rgb(94, 183, 184);
-} */
+}
 
 /* ******************************** */
 
 /*  Teacher form */
-/* .container {
-  background-color: rgba(212, 212, 212, 0.692);
-  filter: blur(3px);
+
+.hidden {
+  display: none;
 }
 
 .container-teacher-form {
@@ -464,4 +470,4 @@ form {
 }
 .input-sex {
   height: 2rem;
-} */
+}
