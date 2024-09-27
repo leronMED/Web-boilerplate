@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teachinder</title>
-    <link rel="stylesheet" href="/src/css/general.css" />
-    <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="/css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -49,21 +49,32 @@
           <label class="label-options" for="age">Age</label>
           <select class="select-list" name="age" id="age">
             <option value="31+">31+</option>
-            <option value="18-31" selected>18-31</option>
+            <option value="18-31">18-31</option>
+            <option value="all" selected>all</option>
           </select>
         </div>
         <div class="drop-list flex flex-space-between">
           <label class="label-options" for="region">Region</label>
           <select class="select-list" name="region" id="region">
-            <option value="asia">Asia</option>
-            <option value="europe" selected>Europe</option>
+            <option value="Germany">Germany</option>
+            <option value="Norway">Norway</option>
+            <option value="Switzerland">Switzerland</option>
+            <option value="Spain">Spain</option>
+            <option value="Canada">Canada</option>
+            <option value="Ireland">Ireland</option>
+            <option value="Australia">Australia</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Turkey">Turkey</option>
+            <option value="United States">United States</option>
+            <option value="-" selected>-</option>
           </select>
         </div>
         <div class="drop-list flex flex-space-between">
           <label class="label-options" for="sex">Sex</label>
           <select class="select-list" name="Sex" id="sex">
             <option value="female">Female</option>
-            <option value="male" selected>Male</option>
+            <option value="male">Male</option>
+            <option value="All" selected>All</option>
           </select>
         </div>
         <div class="drop-list flex">
@@ -83,423 +94,18 @@
           >
         </div>
       </div>
-      <div class="container-avatar-teachers grid grid-5-column">
-        <div class="container-avatar">
-          <div class="container-avatar-photo">
-            <img
-              class="avatar-photo"
-              src="/src/img/avatars/photo_2024-09-08_13-57-49.jpg"
-              alt=""
-            />
-          </div>
-
-          <div class="avatar-name">
-            Ihor <br />
-            Tckachuk
-          </div>
-          <div class="avatar-majority">Chemistry</div>
-          <div class="avatar-country">Ukraine</div>
-        </div>
-        <div class="container-avatar">
-          <div class="container-avatar-photo">
-            <img
-              class="avatar-photo"
-              src="/src/img/avatars/photo_2024-09-08_13-58-06.jpg"
-              alt=""
-            />
-          </div>
-
-          <div class="avatar-name">Pragg <br />Rameshbabu</div>
-          <div class="avatar-majority">Chess</div>
-          <div class="avatar-country">India</div>
-        </div>
-        <div class="container-avatar">
-          <div class="container-avatar-photo">
-            <img
-              class="avatar-photo"
-              src="/src/img/avatars/photo_2024-09-08_13-58-11.jpg"
-              alt=""
-            />
-          </div>
-
-          <div class="avatar-name">Floor <br />Jansen</div>
-          <div class="avatar-majority">Vocal</div>
-          <div class="avatar-country">Denmark</div>
-          <div class="container-svg-star">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              version="1.1"
-              width="3rem"
-              height="256"
-              viewBox="0 0 256 256"
-              xml:space="preserve"
-            >
-              <defs></defs>
-              <g
-                style="
-                  stroke: none;
-                  stroke-width: 0;
-                  stroke-dasharray: none;
-                  stroke-linecap: butt;
-                  stroke-linejoin: miter;
-                  stroke-miterlimit: 10;
-                  fill: none;
-                  fill-rule: nonzero;
-                  opacity: 1;
-                "
-                transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
-              >
-                <path
-                  d="M 45.002 75.502 c 2.862 0 5.72 0.684 8.326 2.051 l 19.485 10.243 l -3.721 -21.678 c -1.002 -5.815 0.926 -11.753 5.164 -15.877 L 90 34.895 l -21.768 -3.161 c -5.838 -0.85 -10.884 -4.514 -13.499 -9.806 L 44.998 2.205 l -9.73 19.717 c -2.615 5.292 -7.661 8.962 -13.499 9.811 L 0 34.895 L 15.749 50.25 c 4.224 4.111 6.156 10.044 5.16 15.863 l -3.721 21.682 l 19.466 -10.238 C 39.268 76.19 42.135 75.502 45.002 75.502 z"
-                  style="
-                    stroke: none;
-                    stroke-width: 1;
-                    stroke-dasharray: none;
-                    stroke-linecap: butt;
-                    stroke-linejoin: miter;
-                    stroke-miterlimit: 10;
-                    fill: rgb(254, 242, 70);
-                    fill-rule: nonzero;
-                    opacity: 1;
-                  "
-                  transform=" matrix(1 0 0 1 0 0) "
-                  stroke-linecap="round"
-                />
-              </g>
-            </svg>
-          </div>
-        </div>
-        <div class="container-avatar">
-          <div class="container-avatar-photo">
-            <img
-              class="avatar-photo"
-              src="/src/img/avatars/photo_2024-09-08_13-58-15.jpg"
-              alt=""
-            />
-          </div>
-
-          <div class="avatar-name">
-            John <br />
-            Burke
-          </div>
-          <div class="avatar-majority">Computer Science</div>
-          <div class="avatar-country">Belgium</div>
-        </div>
-        <div class="container-avatar">
-          <div class="container-avatar-photo">
-            <img
-              class="avatar-photo"
-              src="/src/img/avatars/photo_2024-09-08_13-58-20.jpg"
-              alt=""
-            />
-          </div>
-
-          <div class="avatar-name">
-            Ari <br />
-            Tang
-          </div>
-          <div class="avatar-majority">Biology</div>
-          <div class="avatar-country">China</div>
-          <div class="container-svg-star">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              version="1.1"
-              width="3rem"
-              height="256"
-              viewBox="0 0 256 256"
-              xml:space="preserve"
-            >
-              <defs></defs>
-              <g
-                style="
-                  stroke: none;
-                  stroke-width: 0;
-                  stroke-dasharray: none;
-                  stroke-linecap: butt;
-                  stroke-linejoin: miter;
-                  stroke-miterlimit: 10;
-                  fill: none;
-                  fill-rule: nonzero;
-                  opacity: 1;
-                "
-                transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
-              >
-                <path
-                  d="M 45.002 75.502 c 2.862 0 5.72 0.684 8.326 2.051 l 19.485 10.243 l -3.721 -21.678 c -1.002 -5.815 0.926 -11.753 5.164 -15.877 L 90 34.895 l -21.768 -3.161 c -5.838 -0.85 -10.884 -4.514 -13.499 -9.806 L 44.998 2.205 l -9.73 19.717 c -2.615 5.292 -7.661 8.962 -13.499 9.811 L 0 34.895 L 15.749 50.25 c 4.224 4.111 6.156 10.044 5.16 15.863 l -3.721 21.682 l 19.466 -10.238 C 39.268 76.19 42.135 75.502 45.002 75.502 z"
-                  style="
-                    stroke: none;
-                    stroke-width: 1;
-                    stroke-dasharray: none;
-                    stroke-linecap: butt;
-                    stroke-linejoin: miter;
-                    stroke-miterlimit: 10;
-                    fill: rgb(254, 242, 70);
-                    fill-rule: nonzero;
-                    opacity: 1;
-                  "
-                  transform=" matrix(1 0 0 1 0 0) "
-                  stroke-linecap="round"
-                />
-              </g>
-            </svg>
-          </div>
-        </div>
-        <div class="container-avatar">
-          <div class="container-avatar-photo">
-            <img
-              class="avatar-photo"
-              src="/src/img/avatars/photo_2024-09-08_13-58-24.jpg"
-              alt=""
-            />
-          </div>
-
-          <div class="avatar-name">
-            Rachel <br />
-            Andrew
-          </div>
-          <div class="avatar-majority">Medicine</div>
-          <div class="avatar-country">UK</div>
-        </div>
-        <div class="container-avatar">
-          <div class="container-avatar-photo">
-            <img
-              class="avatar-photo"
-              src="/src/img/avatars/photo_2024-09-08_13-58-28.jpg"
-              alt=""
-            />
-          </div>
-
-          <div class="avatar-name">Anna <br />Muzychuk</div>
-          <div class="avatar-majority">Chess</div>
-          <div class="avatar-country">Belarus</div>
-        </div>
-        <div class="container-avatar">
-          <div class="container-avatar-photo">
-            <img
-              class="avatar-photo"
-              src="/src/img/avatars/photo_2024-09-08_13-58-33.jpg"
-              alt=""
-            />
-          </div>
-
-          <div class="avatar-name">
-            Radoslaw <br />
-            Ljuboevic
-          </div>
-          <div class="avatar-majority">Physics</div>
-          <div class="avatar-country">Poland</div>
-        </div>
-      </div>
+      <div class="container-avatar-teachers grid grid-5-column"></div>
       <div class="line-header">
         <div class="line"></div>
         <h2 class="header-under-line margin-top-small">Statistics</h2>
       </div>
-      <div class="container-table">
-        <table>
-          <thead>
-            <tr>
-              <th>
-                <div class="flex">
-                  Name
-                  <div class="container-svg-arrow">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="rgb(94, 183, 184)"
-                      class="size-6"
-                      width="1.5rem"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3"
-                      />
-                    </svg>
-                  </div>
-                </div>
-
-                <div class="th-hover-line"></div>
-              </th>
-              <th>
-                <div class="flex th-div" style="width: 100%">
-                  <div style="text-align: center">Speciality</div>
-
-                  <div class="container-svg-arrow">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="rgb(94, 183, 184)"
-                      class="size-6"
-                      width="1.5rem"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3"
-                      />
-                    </svg>
-                  </div>
-                </div>
-
-                <div class="th-hover-line"></div>
-              </th>
-              <th>
-                <div class="flex th-div">
-                  Age
-                  <div class="container-svg-arrow">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="rgb(94, 183, 184)"
-                      class="size-6"
-                      width="1.5rem"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div class="th-hover-line"></div>
-              </th>
-              <th>
-                <div class="flex th-div">
-                  Gender
-                  <div class="container-svg-arrow">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="rgb(94, 183, 184)"
-                      class="size-6"
-                      width="1.5rem"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div class="th-hover-line"></div>
-              </th>
-              <th>
-                <div class="flex th-div">
-                  Nationality
-                  <div class="container-svg-arrow">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="rgb(94, 183, 184)"
-                      class="size-6"
-                      width="1.5rem"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div class="th-hover-line"></div>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Daisy Alexander</td>
-              <td>Chemistry</td>
-              <td>28</td>
-              <td>Female</td>
-              <td>Vietnam</td>
-            </tr>
-            <tr>
-              <td>Julia Bradley</td>
-              <td>Math</td>
-              <td>26</td>
-              <td>Female</td>
-              <td>USA</td>
-            </tr>
-            <tr>
-              <td>Rita Hart</td>
-              <td>Art</td>
-              <td>41</td>
-              <td>Female</td>
-              <td>Ireland</td>
-            </tr>
-            <tr>
-              <td>Jonathan Jacobs</td>
-              <td>Math</td>
-              <td>32</td>
-              <td>Male</td>
-              <td>England</td>
-            </tr>
-            <tr>
-              <td>Nathaniel White</td>
-              <td>Computer Science</td>
-              <td>37</td>
-              <td>Male</td>
-              <td>Austria</td>
-            </tr>
-            <tr>
-              <td>Frank Medina</td>
-              <td>English</td>
-              <td>43</td>
-              <td>Male</td>
-              <td>Italy</td>
-            </tr>
-            <tr>
-              <td>Ella Curtls</td>
-              <td>Chess</td>
-              <td>34</td>
-              <td>Female</td>
-              <td>USA</td>
-            </tr>
-            <tr>
-              <td>Claire Simmons</td>
-              <td>Art 38</td>
-              <td>28</td>
-              <td>Female</td>
-              <td>Netherlands</td>
-            </tr>
-            <tr>
-              <td>Benjamin Knight</td>
-              <td>Biology</td>
-              <td>44</td>
-              <td>Male</td>
-              <td>Scotland</td>
-            </tr>
-            <tr>
-              <td>Norma Rose</td>
-              <td>Statistics</td>
-              <td>36</td>
-              <td>Female</td>
-              <td>France</td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="list-number margin-top-smallest flex">
-          <a href="#">1</a>
-          <a class="blue-color" href="#">2</a>
-          <a class="blue-color" href="#">3</a>
-          <a href="#">...</a>
-          <a class="blue-color" href="#">Last</a>
-        </div>
+      <div class="container-table"></div>
+      <div class="list-number margin-top-smallest flex">
+        <a href="#">1</a>
+        <a class="blue-color" href="#">2</a>
+        <a class="blue-color" href="#">3</a>
+        <a href="#">...</a>
+        <a class="blue-color" href="#">Last</a>
       </div>
       <div class="line-header">
         <div class="line"></div>
@@ -523,75 +129,9 @@
             />
           </svg>
         </div>
-        <div class="list-avatars flex flex-space-between">
-          <div class="container-avatar">
-            <div class="container-avatar-photo">
-              <img
-                class="avatar-photo"
-                src="/src/img/avatars/photo_2024-09-08_13-57-49.jpg"
-                alt=""
-              />
-            </div>
-
-            <div class="avatar-name">Ihor <br />Tckachuk</div>
-            <div class="avatar-majority">Chemistry</div>
-            <div class="avatar-country">Ukraine</div>
-          </div>
-          <div class="container-avatar">
-            <div class="container-avatar-photo">
-              <img
-                class="avatar-photo"
-                src="/src/img/avatars/photo_2024-09-08_13-58-20.jpg"
-                alt=""
-              />
-            </div>
-
-            <div class="avatar-name">
-              Ari <br />
-              Tang
-            </div>
-            <div class="avatar-majority">Biology</div>
-            <div class="avatar-country">China</div>
-          </div>
-          <div class="container-avatar">
-            <div class="container-avatar-photo">
-              <img
-                class="avatar-photo"
-                src="/src/img/avatars/photo_2024-09-08_13-58-24.jpg"
-                alt=""
-              />
-            </div>
-
-            <div class="avatar-name">Rachel <br />Andrew</div>
-            <div class="avatar-majority">Medicine</div>
-            <div class="avatar-country">UK</div>
-          </div>
-          <div class="container-avatar">
-            <div class="container-avatar-photo">
-              <img
-                class="avatar-photo"
-                src="/src/img/avatars/photo_2024-09-08_13-58-28.jpg"
-                alt=""
-              />
-            </div>
-
-            <div class="avatar-name">Anna <br />Muzychuk</div>
-            <div class="avatar-majority">Chess</div>
-            <div class="avatar-country">Belarus</div>
-          </div>
-          <div class="container-avatar">
-            <div class="container-avatar-photo">
-              <img
-                class="avatar-photo"
-                src="/src/img/avatars/photo_2024-09-08_13-58-33.jpg"
-                alt=""
-              />
-            </div>
-
-            <div class="avatar-name">Radoslaw <br />Ljuboevic</div>
-            <div class="avatar-majority">Physics</div>
-            <div class="avatar-country">Poland</div>
-          </div>
+        <div class="list-avatars grid grid-5-column  ">
+        
+        
         </div>
         <div class="arrow-right">
           <svg
@@ -639,54 +179,8 @@
         <button class="btn main-color btn-add-teacher">Add teacher</button>
       </div>
     </div>
-    <!-- <div class="container-card-teacher">
-      <div class="container-teacher-info flex flex-space-between">
-        <div class="teacher-info">Teacher info</div>
-        <div class="svg-teacher-info">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="White"
-            class="size-6"
-            width="24px"
-            height="24px"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M6 18 18 6M6 6l12 12"
-            />
-          </svg>
-        </div>
-      </div>
-      <div class="flex">
-        <div>
-          <img
-            class="teacher-info-photo"
-            src="/src/img/photo_card.jpg"
-            alt="Photo of teacher"
-          />
-        </div>
-        <div>
-          <div class="teacher-info-name">Ihor Tkachuk</div>
-          <div class="teacher-info-majority">Chemistry</div>
-          <div class="teacher-info-country">Kyiv, Ukraine</div>
-          <div class="teacher-info-age">35, Male</div>
-          <div class="teacher-info-mail">ihor_tcachuk@domain.com</div>
-          <div class="teacher-info-number">+380964993252</div>
-        </div>
-      </div>
-      <div class="teacher-info-lorem">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum deleniti
-        sint tenetur iusto vitae impedit cumque aut, optio harum illo pariatur
-        mollitia excepturi assumenda. Perferendis quisquam officia error ipsam
-        porro.
-      </div>
-      <a class="teacher-info-toggle" href="#">toggle map</a>
-    </div> -->
-    <!-- <div class="container-teacher-form">
+
+    <div class="container-teacher-form hidden">
       <div class="container-teacher-info flex flex-space-between">
         <div class="teacher-info">Add Teacher</div>
         <div class="svg-teacher-info">
@@ -812,6 +306,7 @@
         ></textarea>
         <button type="submit" class="btn main-color btn-add-teacher" style=" width: 100%; margin-top:3rem;">Add </button>
       </form>
-    </div> -->
+    </div>
+    <script src="/FE4U-Lab2-mock.js"></script>
   </body>
 </html>
