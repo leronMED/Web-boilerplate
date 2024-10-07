@@ -1,0 +1,74 @@
+{
+  "users": [
+    {
+      "full_name": "",
+      "gender": "",
+      "age": null,
+      "state": "ukraine",
+      "city": "",
+      "email": "",
+      "phone": "",
+      "id": 1
+    },
+    {
+      "full_name": "",
+      "gender": "",
+      "age": null,
+      "state": "ukraine",
+      "city": "",
+      "email": "",
+      "phone": "",
+      "id": 2
+    },
+    {
+      "full_name": "",
+      "gender": "",
+      "age": null,
+      "state": "ukraine",
+      "city": "",
+      "email": "",
+      "phone": "",
+      "id": 3
+    },
+    {
+      "full_name": "",
+      "gender": "",
+      "age": null,
+      "state": "ukraine",
+      "city": "",
+      "email": "",
+      "phone": "",
+      "id": 4
+    },
+    {
+      "full_name": "",
+      "gender": "",
+      "age": null,
+      "state": "ukraine",
+      "city": "",
+      "email": "",
+      "phone": "",
+      "id": 5
+    },
+    {
+      "full_name": "",
+      "gender": "",
+      "age": null,
+      "state": "ukraine",
+      "city": "",
+      "email": "",
+      "phone": "",
+      "id": 6
+    },
+    {
+      "full_name": "",
+      "gender": "",
+      "age": null,
+      "state": "ukraine",
+      "city": "",
+      "email": "",
+      "phone": "",
+      "id": 7
+    }
+  ]
+}

@@ -1,21 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teachinder</title>
+    <link rel="stylesheet" href="/src/css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="flex flex-space-between">
+        <div class="image-container"></div>
 
-   <head itemscope itemtype="http://schema.org/WebSite">
+        <nav class="flex search-bar">
+          <input
+            class="input-search"
+            type="text"
+            placeholder="Name, note or age to search"
+          />
+          <button type="submit" class="btn main-color btn-search">
+            Search
+          </button>
+        </nav>
+      </header>
+      <div
+        class="container-menu-add-teacher flex flex-space-between margin-top-big"
+      >
+        <nav class="menu flex flex-space-between main-color">
+          <div>Teachers</div>
+          <div>Statistics</div>
+          <div>Favorites</div>
+          <div>About</div>
+        </nav>
+        <button class="btn main-color btn-add-teacher">Add teacher</button>
+      </div>
+      <div class="line-header margin-top-small">
+        <div class="line"></div>
+        <h2 class="header-under-line margin-top-small">Top Teachers</h2>
+      </div>
+      <div class="options flex">
+        <div class="drop-list flex">
+          <label class="label-options" for="age">Age</label>
+          <select class="select-list" name="age" id="age">
+            <option value="31+">31+</option>
+            <option value="18-31">18-31</option>
+            <option value="all" selected>all</option>
+          </select>
+        </div>
+        <div class="drop-list flex flex-space-between">
+          <label class="label-options" for="region">Region</label>
+          <select class="select-list" name="region" id="region">
+            <option value="Germany">Germany</option>
+            <option value="Norway">Norway</option>
+            <option value="Switzerland">Switzerland</option>
+            <option value="Spain">Spain</option>
+            <option value="Canada">Canada</option>
+            <option value="Ireland">Ireland</option>
+            <option value="Australia">Australia</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Turkey">Turkey</option>
+            <option value="United States">United States</option>
+            <option value="-" selected>-</option>
+          </select>
+        </div>
+        <div class="drop-list flex flex-space-between">
+          <label class="label-options" for="sex">Sex</label>
+          <select class="select-list" name="Sex" id="sex">
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="All" selected>All</option>
+          </select>
+        </div>
+        <div class="drop-list flex">
+          <input type="checkbox" id="with-photo" name="with-photo" />
+          <label
+            class="label-options checkbox label-options-only"
+            for="with-photo"
+            >Only with photo</label
+          >
+        </div>
+        <div class="drop-list flex">
+          <input type="checkbox" id="favorites" name="favorites" />
+          <label
+            class="label-options checkbox label-options-only"
+            for="favorites"
+            >Only favorites</label
+          >
+        </div>
+      </div>
+      <div class="container-avatar-teachers grid grid-5-column"></div>
+      <div class="line-header">
+        <div class="line"></div>
+        <h2 class="header-under-line margin-top-small">Statistics</h2>
+      </div>
+      <div class="container-table"></div>
+      <div class="list-number margin-top-smallest flex">
+       
+      </div>
+      <div class="line-header">
+        <div class="line"></div>
+        <h2 class="header-under-line margin-top-small">Favorites</h2>
+      </div>
+      <div class="container-list-avatars">
+        <div class="arrow-left">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+            width="24px"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5 8.25 12l7.5-7.5"
+            />
+          </svg>
+        </div>
+        <div class="list-avatars grid grid-5-column  ">
+        
+        
+        </div>
+        <div class="arrow-right">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+            width="24px"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m8.25 4.5 7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="line-header">
+        <div class="line"></div>
+      </div>
+      <div class="margin-top-smallest lorem">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At, eius.
+        Placeat consectetur laboriosam delectus soluta quisquam temporibus
+        facilis recusandae iste culpa pariatur! Veritatis maiores doloribus
+        eveniet atque vitae harum itaque?
+      </div>
+      <div class="margin-top-another-smallest lorem">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ea dicta
+        unde iure enim.
+      </div>
+      <div class="margin-top-another-smallest lorem">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      </div>
+      <div
+        class="flex flex-space-between margin-top-small container-menu-add-teacher"
+      >
+        <nav class="menu flex flex-space-between main-color">
+          <div>Teachers</div>
+          <div>Statistics</div>
+          <div>Favorites</div>
+          <div>Abou t</div>
+        </nav>
+        <button class="btn main-color btn-add-teacher">Add teacher</button>
+      </div>
+    </div>
 
-      <meta charset="utf-8">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <meta name="msapplication-tap-highlight" content="no">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <div class="container-teacher-form hidden">
+      <div class="container-teacher-info flex flex-space-between">
+        <div class="teacher-info">Add Teacher</div>
+        <div class="svg-teacher-info">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="White"
+            class="size-6"
+            width="24px"
+            height="24px"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </div>
+      </div>
+      <form action="">
+        <div class="flex flex-column container-input flex-space-between">
+          <label class="label-add-teacher" for="name">Name</label>
+          <input
+            class="input-add-teacher"
+            type="text"
+            id="name"
+            placeholder="Enter name"
+          />
+        </div>
+        <div class="flex flex-column container-input flex-space-between">
+          <label class="label-add-teacher" for="speciality">Speciality</label>
 
-      <title>Project</title>
+          <select class="input-add-teacher" id="speciality">
+            <option value="physics">Physics</option>
+            <option value="math" selected>Mathematics</option>
+          </select>
+        </div>
+        <div class="flex flex-space-between">
+          <div
+            class="flex flex-column container-input flex-space-between input-country-email"
+          >
+            <label class="label-add-teacher" for="country">Country</label>
+            <select class="input-add-teacher" id="country">
+              <option value="poland">Poland</option>
+              <option value="ukraine" selected>Ukraine</option>
+            </select>
+          </div>
+          <div
+            class="flex flex-column container-input flex-space-between input-country-email"
+          >
+            <label class="label-add-teacher" for="city">City</label>
+            <input class="input-add-teacher" type="text" id="city" />
+          </div>
+        </div>
+        <div class="flex flex-space-between">
+          <div
+            class="flex flex-column container-input flex-space-between input-country-email"
+          >
+            <label class="label-add-teacher" for="email">Email</label>
+            <input class="input-add-teacher" type="text" id="email" />
+          </div>
+          <div
+            class="flex flex-column container-input flex-space-between input-country-email"
+          >
+            <label class="label-add-teacher" for="phone">Phone</label>
+            <input class="input-add-teacher" type="text" id="phone" />
+          </div>
+        </div>
+        <div
+          class="flex flex-column container-input flex-space-between input-date"
+        >
+          <label class="label-add-teacher" for="date">Date of birth</label>
+          <input class="input-add-teacher" type="date" id="date" />
+        </div>
+        <div class="flex">
+          <div class="container-input flex" style="height: 3rem;">
+            <span>Sex</span>
+            <label class="label-add-teacher" for="male" style="margin-left: 5rem;"></label>
+               Male</label
+            >
+            <input
+              class="input-add-teacher input-sex"
+              type="radio"
+              id="male"
+              name="sex"
+              value="male"
+              style="margin-left: 1rem;"
+            />
 
-      <link rel="stylesheet" href="./css/app.css">
+            <label class="label-add-teacher" for="female" style="margin-left: 1rem;">Female</label>
+            <input
+              class="input-add-teacher input-sex"
+              type="radio"
+              id="female"
+              name="sex"
+              value="female"
+              style="margin-left: 1rem;"
+            />
+          </div>
+        </div>
 
-   </head>
+        <div class="flex container-input flex-space-between" style="width: rem;">
+          <label class="label-add-teacher" for="colorPicker"
+            >Background color</label
+          >
+          <input
+            class="input-add-teacher"
+            type="color"
+            id="colorPicker"
+            name="colorPicker"
+          />
+        </div>
 
-   <body itemscope itemtype="http://schema.org/WebPage">
-      <script type="text/javascript" src="./js/app.js"></script>
-      
+        <label class="label-add-teacher" for="notes"> Notes(optional)</label>
+        <textarea
+          class="input-add-teacher"
+          id="notes"
+          name="notes"
+          rows="40"
+          cols="100"
+        ></textarea>
+        <button type="submit" class="btn main-color btn-add-teacher" style=" width: 100%; margin-top:3rem;">Add </button>
+      </form>
+    </div>
+    <script src="/src/FE4U-Lab2-mock.js"></script>
   </body>
+
 </html>
