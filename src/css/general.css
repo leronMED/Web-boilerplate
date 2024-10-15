@@ -1,0 +1,76 @@
+/* ********* */
+/* First settings */
+/* ********* */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  max-width: 100rem;
+  padding: 3rem 8rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+/* ********* */
+/* Reusabel elements */
+/* ********* */
+
+.flex {
+  display: flex;
+}
+.flex-space-between {
+  justify-content: space-between;
+}
+.flex-column {
+  flex-direction: column;
+}
+.grid {
+  display: grid;
+}
+.grid-5-column {
+  grid-template-columns: repeat(5, 1fr);
+}
+.margin-top-big {
+  margin-top: 4rem;
+}
+.margin-top-small {
+  margin-top: 2.5rem;
+}
+.margin-top-smallest {
+  margin-top: 1.5rem;
+}
+.margin-top-another-smallest {
+  margin-top: 1rem;
+}
+
+.main-color {
+  color: rgb(247, 136, 111);
+}
+
+.blue-color {
+  color: rgb(94, 183, 184);
+}
+
+.orange-dark {
+  color: rgb(240, 82, 47);
+}
+
+.btn {
+  background-color: white;
+  border: 1.5px solid rgb(247, 136, 111);
+  font-weight: 600;
+}
